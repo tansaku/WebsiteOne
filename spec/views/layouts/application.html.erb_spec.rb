@@ -7,5 +7,9 @@ describe 'layouts/application.html.erb', :type => :feature do
     #rendered.should have_xpath("//script[contains(@src, 'bootstrap')]")
     #rendered.should have_xpath("//script[contains(@src, 'jquery')]")
   end
+  it 'should have a navigation header' do
+    render
+    rendered.should have_selector('section#header')
+  end
 end
 
