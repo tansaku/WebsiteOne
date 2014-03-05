@@ -1,4 +1,6 @@
-Feature: Events
+Feature: As a site user
+  In order to be able to plan activities
+  I would like to see event CRUD functionality
 
   Background:
     Given following events exist:
